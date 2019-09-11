@@ -105,22 +105,20 @@ int main(){
 
     //6.
 int bcaracter(char x){
-    int y = << static_cast<int>(x)
+    int y = static_cast<int>(x);
     cin >> x;
-    if(y>64 && y<90){
-        cout << "Si es letra";
-    }
-    if(y>96 && y<123){
-        cout << "Si es letra";
+    if(y>64 && y<90 || y>96 && y<123){
+        return true;
     }
     else
-        cout << "No es letra";
+        return false;
 }
 
 int main(){
     char x;
+    int y;
     cout << "Escribe un caracter: ";
-    cin >> y
+    cin >> y;
     if(bcaracter(y))
         cout << " Si es letra";
     else
