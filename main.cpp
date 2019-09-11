@@ -94,14 +94,16 @@ bool caracter(char car){
         return false;
 }
 int main(){
+    int n;
     cout << "Escribe un numero: ";
-    cin >> n
+    cin >> n;
     if(caracter(n))
         cout << "Es un numero";
     else
         cout << "No es un numero";
     return 0;
 }
+
 
     //6.
 int bcaracter(char x){
