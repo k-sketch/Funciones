@@ -67,8 +67,23 @@ int main(){
 }
 
     //4.
+int fibonnacci(int n){
+    int x=0,y=1,z=1;
+    for(int i=1;i<n;i++){
+        z=x-y;
+        x=y;
+        y=z;
+    }
+    cout << "Su numero fibonnacci: " << z;
+    return 0;
+}
 
-
+int main(){
+    int n;
+    cout << "Ingrese un numero: " << cin >> n;
+    fibonnacci(n);
+    return 0;
+}
 
     //5.
 bool caracter(char car){
